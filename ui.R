@@ -14,7 +14,7 @@ ui <- page_fluid(
     col_widths = 12,
     card(
       titlePanel("About"),
-      helpText("The Virtual Central Dogma application is an interactive R Shiny tool designed to simulate the core flow of molecular biology: DNA to RNA to Protein. It provides a customizable environment where users can control the length of a generated DNA sequence using an interactive slider and adjust the probability distribution for individual bases (A, T, C, and G) to simulate various nucleotide biases. The app generates the DNA sequence, automatically transcribes it into its corresponding RNA transcript, translates the RNA into an amino acid protein sequence, and calculates the base frequencies displayed in a structured data table.")
+      helpText("The Virtual Central Dogma application is an interactive R Shiny tool designed to simulate the core flow of molecular biology: DNA to RNA to Protein. It provides an environment where users can control the length of a generated DNA sequence using an interactive slider and adjust the probability distribution for individual bases (A, T, C, and G) to simulate various nucleotide biases. The app generates the DNA sequence, automatically transcribes it into its corresponding RNA transcript, translates the RNA into an amino acid protein sequence, and calculates the base frequencies displayed in a structured data table.")
     )),
   layout_columns(
     col_widths = 12,
