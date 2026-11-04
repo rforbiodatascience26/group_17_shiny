@@ -20,6 +20,11 @@ server <- function(input, output) {
     translate_rna(rna_string())
   })
   
+  basefreq_string <- reactive({
+    base_freqs(dna_string())
+  })
+    
+  
   #Display output
   output$dna <- renderText({
     dna_string()
@@ -33,4 +38,8 @@ server <- function(input, output) {
     protein_string()
   })
   
+  output$base_table <- renderTable({
+    basefreq_string()
+  }, rownames = FALSE)
+
 }
