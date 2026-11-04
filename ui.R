@@ -65,7 +65,10 @@ ui <- page_fluid(
         verbatimTextOutput(outputId = "rna"),
         
         strong("Protein sequence"),
-        verbatimTextOutput(outputId = "protein")
+        verbatimTextOutput(outputId = "protein"),
+        
+        strong("Base Frequencies"),
+        tableOutput(outputId = "base_table")
       )
     ))
 )
